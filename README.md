@@ -6,8 +6,8 @@
 ### Symbols
 #### "@": Start and end node
 #### "#": Obstacles
-#### "<span style="color:green">***</span>": Visited node
-##### "<span style="color:red">*+*</span>": Path
+#### "*": Visited node
+#### "+": Path
 
 
 ### Breadth First Search
