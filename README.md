@@ -4,10 +4,10 @@
 * Click or click and drag to create obstacles
 * Press space bar and see the algorithm takes off!
 ### Symbols
-#### @: Start and end node
-#### #: Obstacles
-#### <span style="color:green">*.*</span>: Visited node
-##### <span style="color:red">*+*</span>: Path
+#### "@": Start and end node
+#### "#": Obstacles
+#### "<span style="color:green">*.*</span>": Visited node
+##### "<span style="color:red">*+*</span>": Path
 
 
 ### Breadth First Search
