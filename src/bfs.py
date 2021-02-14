@@ -45,16 +45,15 @@ def bfs(win, startEnd, walls):
                 q.append((start_x + row[k], start_y + col[k], dist + 1, add + move[k]))
     win.write('@', end_x, end_y)
 
-    # find path
-    start_x, start_y = startEnd[0]
-    for i in range(len(add)):
-        index = move.index(add[i])
-        start_x, start_y = start_x + row[index], start_y + col[index]
-        win.write('+', start_x, start_y, fgcolor='red')
-        time.sleep(0.02)
-    win.write('@', end_x, end_y)
-
     if min_dist != sys.maxsize:
+        # find path
+        start_x, start_y = startEnd[0]
+        for i in range(len(add)):
+            index = move.index(add[i])
+            start_x, start_y = start_x + row[index], start_y + col[index]
+            win.write('+', start_x, start_y, fgcolor='red')
+            time.sleep(0.02)
+        win.write('@', end_x, end_y)
         win.write(f"The shortest path from source to destination has length {min_dist}", 1, 1)
     else:
         win.write("Destination can't be reached from a given source", 1, 1)
