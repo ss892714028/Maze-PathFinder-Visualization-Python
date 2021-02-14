@@ -6,8 +6,9 @@
 ### Symbols
 #### @: Start and end node
 #### #: Obstacles
-#### .: Visited node
-##### +: Path
+#### <span style="color:green">*.*</span>: Visited node
+##### <span style="color:red">*+*</span>: Path
+
 
 ### Breadth First Search
 Breadth First Search is unweighted and gaurantee a optimal path.
