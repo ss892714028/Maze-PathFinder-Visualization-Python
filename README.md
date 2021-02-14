@@ -1,4 +1,11 @@
 ## Maze PathFinder Visualization implemented in Python
+### How to use
+* The first two left clicks on the board initialize start and end node
+* Press space bar and see the algorithm go!
+### Symbols
+#### @: Start and end node
+#### #: Visited node
+##### +: Path
 
 ### Breadth First Search
 Breadth First Search is unweighted and gaurantee a optimal path.
