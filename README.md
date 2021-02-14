@@ -1,4 +1,4 @@
-## Maze PathFinder Visualization implemented in Python
+## Maze PathFinder Visualizor implemented in Python
 ### How to use
 * The first two left clicks on the board initialize start and end node
 * Click or click and drag to create obstacles
