@@ -7,7 +7,7 @@ from config import config
 from collections import deque
 import time
 from bfs import bfs
-
+from dfs import dfs
 
 
 def drawer():
@@ -43,7 +43,8 @@ def drawer():
             elif event.type == pygame.KEYDOWN:
                 if config['algo'] == 'bfs':
                     bfs(win, startEnd, walls)
-
+                if config['algo'] == 'dfs':
+                    dfs(win, startEnd, walls)
 
 
 if __name__ == "__main__":

@@ -43,6 +43,7 @@ def bfs(win, startEnd, walls):
 
                 win.write('*', start_x + row[k], start_y + col[k], fgcolor='green')
                 q.append((start_x + row[k], start_y + col[k], dist + 1, add + move[k]))
+
     win.write('@', end_x, end_y)
 
     if min_dist != sys.maxsize:

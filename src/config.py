@@ -1,7 +1,7 @@
 config = {
     "board": {
         'w': 50,
-        'h': 40
+        'h': 50
     },
-    "algo": 'bfs'
+    "algo": 'dfs'
 }
