@@ -35,6 +35,11 @@ def dfs(win, startEnd, walls):
     min_dist = sys.maxsize
 
     while q:
+        for i in range(len(add)):
+            for event in pygame.event.get():
+                # Quit if the user closes the window.
+                if event.type == pygame.QUIT:
+                    return
         (start_x, start_y, dist, add) = q[-1]
         if start_x == end_x and start_y == end_y:
             min_dist = dist
@@ -45,7 +50,7 @@ def dfs(win, startEnd, walls):
                 visited[start_x + row[k]][start_y + col[k]] = True
 
                 win.write('*', start_x + row[k], start_y + col[k], fgcolor='green')
-                pygame.time.wait(3)
+                pygame.time.wait(5)
                 q.append((start_x + row[k], start_y + col[k], dist + 1, add + move[k]))
                 found = True
                 break
@@ -64,7 +69,7 @@ def dfs(win, startEnd, walls):
             index = move.index(add[i])
             start_x, start_y = start_x + row[index], start_y + col[index]
             win.write('+', start_x, start_y, fgcolor='red')
-            pygame.time.wait(5)
+            pygame.time.wait(10)
         win.write('@', end_x, end_y)
         win.write(f"The path from source to destination has length {min_dist}", 1, 1)
     else:
