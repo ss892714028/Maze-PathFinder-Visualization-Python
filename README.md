@@ -24,5 +24,5 @@ Depth First Search is unweighted and does not guarantee a optimal path.
 
 ### Astar (A*)
 A* is weighted and guarantee a optimal path.                                                         
-![A* easy](https://github.com/ss892714028/Maze-PathFinder-Visualization-Python/blob/master/gifs/astar_ez.gif)
-![A*](https://github.com/ss892714028/Maze-PathFinder-Visualization-Python/blob/master/gifs/astar.gif)
+![A* easy](https://github.com/ss892714028/Maze-PathFinder-Visualization-Python/blob/master/gifs/a-star_ez.gif)
+![A*](https://github.com/ss892714028/Maze-PathFinder-Visualization-Python/blob/master/gifs/a-star.gif)
