@@ -9,6 +9,10 @@
 #### "*": Visited node
 #### "+": Path
 
+### Algorithm Implemented
+* BFS
+* DFS
+* ASTAR (A*)
 
 ### Breadth First Search
 Breadth First Search is unweighted and guarantee a optimal path.
