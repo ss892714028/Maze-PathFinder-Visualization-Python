@@ -3,5 +3,5 @@ config = {
         'w': 50,
         'h': 50
     },
-    "algo": 'dfs'
+    "algo": 'astar'
 }

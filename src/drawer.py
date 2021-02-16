@@ -8,6 +8,7 @@ from collections import deque
 import time
 from bfs import bfs
 from dfs import dfs
+from a_star import a_star
 
 
 def drawer():
@@ -45,6 +46,9 @@ def drawer():
                     bfs(win, startEnd, walls)
                 if config['algo'] == 'dfs':
                     dfs(win, startEnd, walls)
+                if config['algo'] == 'astar':
+                    a_star(win, startEnd, walls)
+
 
 
 if __name__ == "__main__":

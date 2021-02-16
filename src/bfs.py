@@ -3,6 +3,7 @@ import numpy as np
 from config import config
 from collections import deque
 import time
+import pygame
 
 
 def is_valid(mat, visited, row, col):
@@ -33,6 +34,10 @@ def bfs(win, startEnd, walls):
     min_dist = sys.maxsize
 
     while q:
+        for event in pygame.event.get():
+            # Quit if the user closes the window.
+            if event.type == pygame.QUIT:
+                return
         (start_x, start_y, dist, add) = q.popleft()
         if start_x == end_x and start_y == end_y:
             min_dist = dist
@@ -50,10 +55,15 @@ def bfs(win, startEnd, walls):
         # find path
         start_x, start_y = startEnd[0]
         for i in range(len(add)):
+            for event in pygame.event.get():
+                # Quit if the user closes the window.
+                if event.type == pygame.QUIT:
+                    return
             index = move.index(add[i])
             start_x, start_y = start_x + row[index], start_y + col[index]
             win.write('+', start_x, start_y, fgcolor='red')
             time.sleep(0.02)
+
         win.write('@', end_x, end_y)
         win.write(f"The shortest path from source to destination has length {min_dist}", 1, 1)
     else:
