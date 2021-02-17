@@ -5,6 +5,7 @@ Go to config.py and change settings.
 'dfs' for Depth first search
 'astar' for A*
 ```bash
+pip install -r requirements.txt
 python ./src/drawer.py
 ```
 * The first two left clicks on the board initialize start and end node
