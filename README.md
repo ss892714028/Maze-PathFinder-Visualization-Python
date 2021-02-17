@@ -1,5 +1,12 @@
 ## Maze PathFinder Visualizer implemented in Python
 ### How to use
+Go to config.py and change settings.
+'bfs' for Breadth first search
+'dfs' for Depth first search
+'astar' for A*
+```bash
+python ./src/drawer.py
+```
 * The first two left clicks on the board initialize start and end node
 * Click or click and drag to create obstacles
 * Press space bar and see the algorithm takes off!
