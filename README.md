@@ -5,6 +5,7 @@ Go to config.py and change settings.
 'dfs' for Depth first search
 'astar' for A*
 ```bash
+git clone https://github.com/ss892714028/Maze-PathFinder-Visualization-Python
 pip install -r requirements.txt
 python ./src/drawer.py
 ```
