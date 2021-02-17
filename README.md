@@ -17,6 +17,9 @@ python ./src/drawer.py
 #### "*": Visited node
 #### "+": Path
 
+### Contributions
+All contributions are welcome. :)
+
 ### Algorithm Implemented
 * BFS (unweighted Dijastra)
 * DFS
