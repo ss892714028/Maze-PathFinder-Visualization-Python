@@ -25,15 +25,15 @@ All contributions are welcome. :)
 * DFS
 * ASTAR (A*)
 
-### Breadth First Search (unweighted Dijkstra)
+#### Breadth First Search (unweighted Dijkstra)
 Breadth First Search is unweighted and guarantee a optimal path.
 ![BFS](https://github.com/ss892714028/Maze-PathFinder-Visualization-Python/blob/master/gifs/bfs.gif)
 
-### Depth First Search
+#### Depth First Search
 Depth First Search is unweighted and does not guarantee a optimal path.
 ![DFS](https://github.com/ss892714028/Maze-PathFinder-Visualization-Python/blob/master/gifs/dfs-nonoptimal.gif)
 
-### Astar (A*)
+#### Astar (A*)
 A* is weighted and guarantee a optimal path.                                                         
 ![A* easy](https://github.com/ss892714028/Maze-PathFinder-Visualization-Python/blob/master/gifs/a-star_ez.gif)
 ![A*](https://github.com/ss892714028/Maze-PathFinder-Visualization-Python/blob/master/gifs/a-star.gif)
