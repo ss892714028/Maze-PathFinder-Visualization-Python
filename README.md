@@ -1,12 +1,23 @@
 # Maze PathFinder Visualizer implemented in Python
 ## How to use
-Go to config.py and change settings.
-'bfs' for Breadth first search
-'dfs' for Depth first search
-'astar' for A*
+
+### Download:
 ```bash
 git clone https://github.com/ss892714028/Maze-PathFinder-Visualization-Python
+```
+### Install required Libraries
+```bash
 pip install -r requirements.txt
+```
+### Settings
+Go to config.py and change settings.
+* 'w': width of the board
+* 'h': height of the board
+* 'algo':'bfs' for Breadth first search
+* 'algo':'dfs' for Depth first search
+* 'algo':'astar' for A*
+### Run the visualization
+```bash
 python ./src/drawer.py
 ```
 * The first two left clicks on the board initialize start and end node
