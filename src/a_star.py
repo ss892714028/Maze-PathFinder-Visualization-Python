@@ -62,7 +62,7 @@ def a_star(win, startEnd, walls):
                         q_hash.add(coordinate)
                         q.put((f_score[coordinate], count, coordinate))
                         win.write('*', *coordinate, fgcolor='green')
-                        pygame.time.wait(5)
+                        pygame.time.wait(1)
         if current == end:
             count = 0
             win.write('@', *end)
@@ -73,13 +73,9 @@ def a_star(win, startEnd, walls):
                 current = came_from[current]
                 win.write('+', *current, fgcolor='red')
                 count += 1
-                pygame.time.wait(20)
+                pygame.time.wait(5)
             win.write('@', *start)
             win.write(f"The shortest path from source to destination has length {count}", 1, 1)
             break
-    win.write("Destination can't be reached from a given source", 1, 1)
-
-
-
-
-
+    if q.empty() and current != end:
+        win.write("Destination can't be reached from a given source", 1, 1)
