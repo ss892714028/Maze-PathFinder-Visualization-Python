@@ -33,11 +33,11 @@ python ./src/drawer.py
 All contributions are welcome. :)
 
 ## Algorithm Implemented
-* BFS (unweighted Dijastra)
+* BFS
 * DFS
 * ASTAR (A*)
 
-### Breadth First Search (unweighted Dijkstra)
+### Breadth First Search
 Breadth First Search is unweighted and guarantee a optimal path.
 ![BFS](https://github.com/ss892714028/Maze-PathFinder-Visualization-Python/blob/master/gifs/bfs.gif)
 
